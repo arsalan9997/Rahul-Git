@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Clone Code') {
             steps {
-                git 'mvn -f pom.xml clean package -DskipTests'
+                git 'https://github.com/arsalan9997/Rahul-Git.git'
             }
         }
 
         stage('Build App') {
             steps {
-                sh 'mvn clean package -DskipTests'
+                sh 'mvn -f pom.xml clean package -DskipTests'
             }
         }
 
