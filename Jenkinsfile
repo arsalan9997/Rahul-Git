@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Code') {
             steps {
-                git ''
+                git 'https://github.com/arsalan9997/Rahul-Git.git'
             }
         }
 
