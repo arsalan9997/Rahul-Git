@@ -1,0 +1,7 @@
+version: '3'
+services:
+  student1-app:
+    image: student1-app
+    build: .
+    ports:
+      - "8081:8081"
