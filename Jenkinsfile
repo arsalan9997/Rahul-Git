@@ -10,7 +10,6 @@ pipeline {
 
         stage('Build App') {
             steps {
-                sh 'mvn clean package -DskipTests'
             }
         }
 
